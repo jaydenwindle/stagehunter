@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>StageHunter - The easiest way to find Open Mic nights in Los Angeles</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background: #ff9966;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .wrapper {
+            max-width: 960px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 3em;
+            font-family: "Rubik";
+            text-align: center;
+            color: white;
+        }
+        p {
+            font-size: 1.5em;
+            font-family: "Rubik";
+            text-align: center;
+            color: white;
+            margin-bottom: 2em;
+        }
+        #logo {
+            width: 150px;
+            height: 150px;
+        }
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        label {
+            font-size: 1em;
+            font-family: "Rubik";
+            text-align: center;
+            color: white;
+            margin-bottom: 1em;
+        }
+        input[type="email"] {
+            padding: 1em 0;
+            border: 0px solid white;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 1em;
+            font-family: "Rubik";
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+        input[type="submit"] {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            border: 1px solid white;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 1em;
+            font-family: "Rubik";
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="icon-white.png" alt="" id="logo">
+        <h1>StageHunter</h1>
+        <p>The easiest way to find Open Mic nights in Los Angeles.</p>
+        <form action="https://buttondown.email/api/emails/embed-subscribe/stagehunter" method="post" target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/stagehunter', 'popupwindow')" class="embeddable-buttondown-form">
+            <label for="bd-email">Enter your email to get early access:</label>
+            <input type="email" name="email" id="bd-email" placeholder="you@email.com">
+            <input type="hidden" value="1" name="embed" />
+            <input type="submit" value="Subscribe" />
+        </form>
+    </div>
+</body>
+</html>
